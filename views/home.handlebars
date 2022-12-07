@@ -1,0 +1,10 @@
+<h1><strong></strong>Lista de Filmes:</strong></h1>
+{{#each filmes}}
+    <strong>Sala:</strong>{{sala}}<br>
+    <strong>Titulo:</strong> {{titulo}}<br>
+   <strong>Sinopse:</strong> {{sinopse}}<br>
+   <strong>Cadastro</strong> {{#formatDate createdAt}}{{/formatDate}}<br>
+   <a href="/deletar/{{id}}"><button>Deletar</button></a>
+   <hr>
+
+   {{/each}}
